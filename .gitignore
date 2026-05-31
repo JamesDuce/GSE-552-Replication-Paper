@@ -1,0 +1,40 @@
+# Temporary/intermediate files — regenerable from code
+temp/
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*~
+
+# Data files too large for Git (download separately per input/README.md)
+input/data/*.dta
+input/data/*.csv
+input/data/*.zip
+
+# NOTE: output/ IS tracked — readers can see results without running the code

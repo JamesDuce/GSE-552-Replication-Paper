@@ -1,0 +1,30 @@
+\begin{table}[h]
+\centering
+\caption{Replication of Table 2: Average Synthetic Control Treatment Effects (1982--2014)\\
+\small{\textit{Jones \& Marinescu (2022), American Economic Journal: Economic Policy}}}
+\label{tab:table2}
+\begin{tabular}{lcccc}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & Employment & Part-Time & LFP & Hours Worked \\
+ & Rate & Rate & Rate & Last Week \\
+\midrule
+$\hat{\alpha}_0$ (Replicated) & 0.013 & 0.012 & 0.014 & $-$0.474 \\
+$p$-value                      & 0.459 & 0.156 & 0.327 & 0.280 \\
+95\% CI                        & [$-$0.027, 0.031] & [$-$0.017, 0.017] & [$-$0.021, 0.032] & [$-$1.055, 0.729] \\
+$N$ placebos                   & 37 & 32 & 49 & 50 \\
+Pre-period RMSE                & 0.0036 & 0.0016 & 0.0139 & 0.4124 \\
+\midrule
+\multicolumn{5}{l}{\textit{Published result (Jones \& Marinescu 2022):}} \\
+Published $\hat{\alpha}_0$     & 0.001 & 0.018$^{**}$ & 0.012 & $-$0.796$^{*}$ \\
+Published $p$-value            & 0.942 & 0.020 & 0.331 & 0.084 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+\small \textit{Notes:} $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+Treatment effect is the 1982--2014 average gap between Alaska and Synthetic Alaska.
+$p$-values from permutation/placebo tests; donor states filtered to MSPE ratio $<$ 5 relative to Alaska.
+Hours worked uses 1979--1981 pre-period due to MORG data availability.
+Replicated using R \texttt{Synth} package; original code in Stata.
+\end{flushleft}
+\end{table}
